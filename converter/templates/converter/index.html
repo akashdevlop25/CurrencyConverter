@@ -1,0 +1,8 @@
+<center>
+<form method="POST">{% csrf_token %}
+	{{ form.as_p }}
+	<button type="submit">Check</button>
+</form>
+
+<br><br><br>
+{{ amount }} {{ first_currency }} was {{ converted_amount }} {{ second_currency }}
